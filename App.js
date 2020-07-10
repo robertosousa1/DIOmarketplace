@@ -1,19 +1,5 @@
 import React from 'react';
-import {
-  StyleSheet,
-  View,
-  Text,
-} from 'react-native';
-
-export default function App () {
-  return (
-    <View style={styles.container}>
-      <Text style={styles.title}>
-        Hello, DIO!
-      </Text>
-    </View>
-  );
-};
+import { StyleSheet, View, Text } from 'react-native';
 
 const styles = StyleSheet.create({
   container: {
@@ -28,3 +14,11 @@ const styles = StyleSheet.create({
     margin: 10,
   },
 });
+
+export default function App() {
+  return (
+    <View style={styles.container}>
+      <Text style={styles.title}>Hello, DIO!</Text>
+    </View>
+  );
+}
