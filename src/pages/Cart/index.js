@@ -2,8 +2,6 @@ import React, { useState } from 'react';
 import { View } from 'react-native';
 import FeatherIcon from 'react-native-vector-icons/Feather';
 
-// import EmptyCart from '../../components/EmptyCart';
-
 import {
   Container,
   ProductContainer,
@@ -52,7 +50,6 @@ export default function Cart() {
         <ProductList
           data={products}
           keyExtractor={(item) => item.id}
-          // ListEmptyComponent={<EmptyCart />}
           ListFooterComponent={<View />}
           ListFooterComponentStyle={{
             height: 80,
