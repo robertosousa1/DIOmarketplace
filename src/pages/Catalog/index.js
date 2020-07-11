@@ -18,7 +18,7 @@ const styles = StyleSheet.create({
 export default function App() {
   return (
     <View style={styles.container}>
-      <Text style={styles.title}>Hello, DIO!</Text>
+      <Text style={styles.title}>Catalog</Text>
     </View>
   );
 }
