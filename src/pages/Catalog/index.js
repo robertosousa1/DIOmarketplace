@@ -32,7 +32,7 @@ export default function Catalog() {
       id: '2',
       title: 'Assinatura Anual',
       image_url:
-        'https://res.cloudinary.com/robertosousa1/image/upload/v1594492578/dio/annual_subscription_qyolci.png',
+        'https://res.cloudinary.com/robertosousa1/image/upload/v1594492578/dio/annual_subscription-shad_fkr6g3.png',
       price: 540,
     },
   ]);
