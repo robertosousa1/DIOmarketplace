@@ -2,27 +2,17 @@
   "products": [
     {
       "id": "1",
-      "title": "Nike Running Shoe",
-      "image_url": "https://fgl.scene7.com/is/image/FGLSportsLtd/FGL_332721783_01_a?bgColor=0,0,0,0&fmt=png-alpha&hei=528&resMode=sharp&qlt=85,1&op_sharpen=1",
+      "title": "Assinatura Trimestral",
+      "image_url":
+        "https://res.cloudinary.com/robertosousa1/image/upload/v1594492578/dio/quarterly_subscription_yjolpc.png",
       "price": 150
     },
     {
       "id": "2",
-      "title": "Nike Sport Shoe",
-      "image_url": "https://fgl.scene7.com/is/image/FGLSportsLtd/FGL_332498131_01_a?bgColor=0,0,0,0&fmt=png-alpha&hei=528&resMode=sharp&qlt=85,1&op_sharpen=1",
-      "price": 120
-    },
-    {
-      "id": "3",
-      "title": "Nike Woman Shoe",
-      "image_url": "https://fgl.scene7.com/is/image/FGLSportsLtd/332498777_01_a-Nike-Womens-Zoom-Winflo-5-Running-Shoes-Black-White-AA7414-001?bgColor=0,0,0,0&fmt=png-alpha&hei=528&resMode=sharp&qlt=85,1&op_sharpen=1",
-      "price": 60
-    },
-    {
-      "id": "4",
-      "title": "Nike Running Sport Shoe",
-      "image_url": "https://fgl.scene7.com/is/image/FGLSportsLtd/332508491_01_a-Nike-Womens-Free-TR-8-Training-Shoes-Black-White-942888-001?bgColor=0,0,0,0&fmt=png-alpha&hei=528&resMode=sharp&qlt=85,1&op_sharpen=1",
-      "price": 300
+      "title": "Assinatura Anual",
+      "image_url":
+        "https://res.cloudinary.com/robertosousa1/image/upload/v1594492578/dio/annual_subscription-shad_fkr6g3.png",
+      "price": 540
     }
   ]
 }

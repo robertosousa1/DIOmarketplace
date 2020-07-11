@@ -1,9 +1,10 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { View } from 'react-native';
 import FeatherIcon from 'react-native-vector-icons/Feather';
 
 import FloatingCart from '../../components/FloatingCart';
 
+import api from '../../services/api';
 import formatValue from '../../utils/formatValue';
 
 import {
@@ -20,22 +21,16 @@ import {
 } from './styles';
 
 export default function Catalog() {
-  const [products, setProducts] = useState([
-    {
-      id: '1',
-      title: 'Assinatura Trimestral',
-      image_url:
-        'https://res.cloudinary.com/robertosousa1/image/upload/v1594492578/dio/quarterly_subscription_yjolpc.png',
-      price: 150,
-    },
-    {
-      id: '2',
-      title: 'Assinatura Anual',
-      image_url:
-        'https://res.cloudinary.com/robertosousa1/image/upload/v1594492578/dio/annual_subscription-shad_fkr6g3.png',
-      price: 540,
-    },
-  ]);
+  const [products, setProducts] = useState([]);
+
+  useEffect(() => {
+    async function loadProducts() {
+      const { data } = await api.get('/products');
+
+      setProducts(data);
+    }
+    loadProducts();
+  }, []);
 
   return (
     <Container>
