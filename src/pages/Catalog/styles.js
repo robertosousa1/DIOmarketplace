@@ -32,7 +32,6 @@ export const ProductImage = styled.Image`
   width: 90%;
   height: 220px;
   align-self: center;
-  box-shadow: 4px 12px 10px #312e38;
 `;
 
 export const ProductTitle = styled.Text`
