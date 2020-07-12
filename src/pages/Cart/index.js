@@ -1,4 +1,5 @@
-import React, { useState } from 'react';
+import React, { useMemo } from 'react';
+import { useSelector } from 'react-redux';
 import { View } from 'react-native';
 import FeatherIcon from 'react-native-vector-icons/Feather';
 
@@ -27,7 +28,20 @@ import {
 import formatValue from '../../utils/formatValue';
 
 export default function Cart() {
-  const [products, setProducts] = useState([]);
+  const products = useSelector(({ cart }) => cart);
+
+  const cartSize = useMemo(() => {
+    return products.length || 0;
+  }, [products]);
+
+  const cartTotal = useMemo(() => {
+    const cartAmount = products.reduce((accumulator, product) => {
+      const totalPrice = accumulator + product.price * product.amount;
+      return totalPrice;
+    }, 0);
+
+    return formatValue(cartAmount);
+  }, [products]);
 
   return (
     <Container>
@@ -51,10 +65,10 @@ export default function Cart() {
                   </ProductSinglePrice>
 
                   <TotalContainer>
-                    <ProductQuantity>{`${item.quantity}x`}</ProductQuantity>
+                    <ProductQuantity>{`${item.amount}x`}</ProductQuantity>
 
                     <ProductPrice>
-                      {formatValue(item.price * item.quantity)}
+                      {formatValue(item.price * item.amount)}
                     </ProductPrice>
                   </TotalContainer>
                 </ProductPriceContainer>
@@ -73,8 +87,8 @@ export default function Cart() {
       </ProductContainer>
       <TotalProductsContainer>
         <FeatherIcon name="shopping-cart" color="#fff" size={24} />
-        <TotalProductsText>2 itens</TotalProductsText>
-        <SubtotalValue>R$100,00</SubtotalValue>
+        <TotalProductsText>{cartSize} itens</TotalProductsText>
+        <SubtotalValue>{cartTotal}</SubtotalValue>
       </TotalProductsContainer>
     </Container>
   );
