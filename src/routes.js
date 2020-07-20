@@ -1,7 +1,6 @@
 import React from 'react';
 import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
-
 import FeatherIcon from 'react-native-vector-icons/Feather';
 
 import Header from './components/Header';
@@ -19,7 +18,7 @@ export default function Routes() {
           headerShown: true,
           cardStyle: { backgroundColor: '#313746' },
         }}
-        initialRouteName="Catálogo"
+        initialRouteName="Catalog"
       >
         <Stack.Screen
           name="Catalog"

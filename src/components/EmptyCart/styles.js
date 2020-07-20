@@ -17,5 +17,4 @@ export const EmptyCartText = styled.Text`
   margin-top: 5px;
   line-height: 40px;
   letter-spacing: 3px;
-  text-transform: capitalize;
 `;

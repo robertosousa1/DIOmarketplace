@@ -3,7 +3,6 @@ import styled from 'styled-components/native';
 export const Container = styled.View`
   bottom: 0px;
   position: absolute;
-
   background: #e83f5b;
   padding: 0px 18px;
   border-radius: 10px;
@@ -27,13 +26,11 @@ export const CartButton = styled.TouchableOpacity`
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-
   padding: 20px 20px;
 `;
 
 export const CartButtonText = styled.Text`
   flex: 1;
-
   color: #f3f9ff;
   font-weight: bold;
   margin-left: 15px;

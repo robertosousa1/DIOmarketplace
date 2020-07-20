@@ -30,13 +30,15 @@ export default function FloatingCart() {
     }, 0);
 
     return formatValue(cartAmount);
-  }, [products]);
+  });
 
   return (
     <Container>
       <CartButton onPress={() => navigation.navigate('Cart')}>
         <FeatherIcon name="shopping-cart" size={24} color="#f3f9ff" />
-        <CartButtonText>{cartSize} itens</CartButtonText>
+        <CartButtonText>
+          {cartSize} {cartSize === 1 ? 'item' : 'itens'}
+        </CartButtonText>
 
         <CartPricing>
           <CartTotalPrice>{cartTotal}</CartTotalPrice>

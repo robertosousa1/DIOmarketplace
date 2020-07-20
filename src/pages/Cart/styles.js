@@ -90,7 +90,7 @@ export const ActionButton = styled.TouchableOpacity`
 `;
 
 export const TotalProductsContainer = styled.View`
-  bottom: 0px;
+  bottom: 0;
   position: absolute;
   flex-direction: row;
   align-items: center;
@@ -101,14 +101,14 @@ export const TotalProductsContainer = styled.View`
 `;
 
 export const TotalProductsText = styled.Text`
+  flex: 1;
   font-size: 16px;
   color: #fff;
   margin-left: 15px;
-  flex: 1;
   font-weight: bold;
 `;
 
-export const SubtotalValue = styled.Text`
+export const SubTotalValue = styled.Text`
   font-size: 16px;
   color: #fff;
   font-weight: bold;

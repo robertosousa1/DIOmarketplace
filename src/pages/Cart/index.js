@@ -24,7 +24,7 @@ import {
   ActionButton,
   TotalProductsContainer,
   TotalProductsText,
-  SubtotalValue,
+  SubTotalValue,
 } from './styles';
 
 import formatValue from '../../utils/formatValue';
@@ -107,8 +107,10 @@ export default function Cart() {
       </ProductContainer>
       <TotalProductsContainer>
         <FeatherIcon name="shopping-cart" color="#fff" size={24} />
-        <TotalProductsText>{cartSize} itens</TotalProductsText>
-        <SubtotalValue>{cartTotal}</SubtotalValue>
+        <TotalProductsText>
+          {cartSize} {cartSize === 1 ? 'item' : 'itens'}
+        </TotalProductsText>
+        <SubTotalValue>{cartTotal}</SubTotalValue>
       </TotalProductsContainer>
     </Container>
   );
