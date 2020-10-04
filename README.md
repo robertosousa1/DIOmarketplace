@@ -43,7 +43,7 @@ Repository developed in the Redux module of React Native Bootcamp by <a href="ht
 -  Enter the folder `DIOmarketplace`
 -  Run `yarn` or `npm install` to install the dependencies
 -  On MacOS, access the <b>ios</b> folder and run `pod install`
--  Run `react-native run ios` or `react-native run android`
+-  Run `react-native run-ios` or `react-native run-android`
 
 ## [](#how-to-contribute):pencil2: How to contribute
 
